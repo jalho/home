@@ -1,0 +1,5 @@
+# $ alacritty --version
+# alacritty 0.13.2 (bb8ea18e)
+
+[window]
+opacity = 0.90
