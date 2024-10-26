@@ -3,11 +3,14 @@ bindsym $mod+I exec --no-startup-id firefox
 bindsym $mod+Return exec alacritty -e tmux 
 
 # set monitors frame frequency (use `xrandr` to see the available "outputs")
-exec --no-startup-id xrandr --output DP-4 --mode 3840x2160 --rate 144
-exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144
+exec --no-startup-id xrandr --output DP-4 --mode 3840x2160 --rate 144 --primary
+exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144 --rotate left --right-of DP-4
+workspace 1 output DP-4
+workspace 8 output HDMI-0
 
 # start a compositor thing that allows making stuff transparent
 exec --no-startup-id picom
 
 # set a random wallpaper
-exec --no-startup-id feh --bg-fill "$(find ~/Pictures/wallpapers/ -type f | shuf -n 1)"
+exec --no-startup-id /home/jka/scripts/set-wallpaper.sh
+
