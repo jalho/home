@@ -10,4 +10,4 @@ exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144
 exec --no-startup-id picom
 
 # set a random wallpaper
-feh --bg-scale "$(find ~/Pictures/wallpapers/ -type f | shuf -n 1)"
+exec --no-startup-id feh --bg-fill "$(find ~/Pictures/wallpapers/ -type f | shuf -n 1)"
