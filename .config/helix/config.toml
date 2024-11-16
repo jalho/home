@@ -3,3 +3,5 @@ theme = "onedarker"
 [editor]
 line-number = "relative"
 
+[keys.select]
+f = ":reflow"
