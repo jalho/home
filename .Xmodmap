@@ -1,0 +1,12 @@
+!
+! Keyboard remapping.
+!
+! To apply changes, do: `xmodmap ~/.Xmodmap`
+! Use `xev` to identify keycodes.
+!
+
+
+! Remap the 'å' key to '[', and "¨" to ']'
+keycode 34 = bracketleft
+keycode 35 = bracketright
+
