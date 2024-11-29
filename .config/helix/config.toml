@@ -3,5 +3,13 @@ theme = "onedarker"
 [editor]
 line-number = "relative"
 
-[keys.select]
-f = ":reflow"
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "all"
+
+[editor.soft-wrap]
+enable = false
+
