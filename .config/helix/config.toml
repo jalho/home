@@ -1,15 +1,12 @@
+# docs: https://docs.helix-editor.com/editor.html
+#       [Accessed 2024-12-01]
+
 theme = "onedarker"
 
 [editor]
 line-number = "relative"
 
 [editor.whitespace.render]
-space = "none"
 tab = "all"
-nbsp = "none"
-nnbsp = "none"
 newline = "all"
-
-[editor.soft-wrap]
-enable = false
 
