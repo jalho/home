@@ -9,7 +9,7 @@ function fish_prompt
         set stat (set_color red)"[$last_status]"(set_color normal)
     end
 
-    echo -e (string join '' -- (set_color green) (prompt_pwd) (set_color normal) $stat)
+    echo -e (string join '' -- (set_color blue) (prompt_pwd) (set_color normal) $stat)
     echo -n '$ '
 end
 
