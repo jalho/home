@@ -8,8 +8,7 @@ function fish_prompt
     if test $last_status -ne 0
         set stat (set_color red)"[$last_status]"(set_color normal)
     end
-
-    echo -e (string join '' -- (set_color blue) (prompt_pwd) (set_color normal) $stat)
+    echo -e (string join '' -- (set_color cyan) (prompt_pwd) (set_color normal) $stat)
     echo -n '$ '
 end
 
@@ -18,3 +17,5 @@ if status is-interactive
 end
 
 set fish_greeting ''
+
+fish_add_path --append /home/jka/.cargo/bin/
